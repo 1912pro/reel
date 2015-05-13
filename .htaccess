@@ -1,0 +1,8 @@
+ RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]  
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ ta.html?title=$1
+php_flag output_buffering on

@@ -1,0 +1,649 @@
+l/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, .h1, h2, .h2, h3, .h3 h4 .h4 {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+
+/* TOP HEADER */
+a:hover{
+ text-decoration: none;
+}
+.menu-top{
+    height: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    margin-top: 30px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#header{
+  max-width: 960px;
+  min-height: 130px;
+  background-color: #ffffff;
+}
+#header-right{
+  clear: right;
+  float: right;
+  margin: 0 26px 25px;
+}
+#menu-wrapper{
+  height: 62px;
+  position: static;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* CUSTOMIZE LOGO */
+#logo{
+  float: left;
+  margin: -25px 0px 0px 20px;
+}
+#left{
+  width: 20px;
+  height: 70px;
+  background-color: #ffffff;
+}
+#main-menu {
+  display: inline-block;
+  margin-top: -26px;
+  float: right; 
+  height: auto;
+  margin-right: 25px;
+  font-family: tahoma;
+}
+#menu-left {
+  float: left;
+  width: 25px;
+  height: 62px;
+  background: url("../../images/mainMenu-left.png") no-repeat 0 0;
+}
+#menu-body {
+  float: left;
+  max-width: 700px;
+  height: 62px;
+  background: url("../../images/mainMenu-repeat.png") repeat-x 0 0;
+/*background-color:#880015 */
+}
+#menu-right {
+  float: left;
+  width: 20px;
+  height: 62px;
+  background: transparent url("../../images/mainMenu-right.png") no-repeat 0 0;
+}
+ #menu-body .container {
+  max-width: 560px;
+}
+#navbar a{
+  font-weight: bold;
+  font-size: 14px;
+}
+#specification{
+  max-width: 400px;
+  margin-left: 15px;
+}
+#specification a{
+  font-size: 18px;
+
+  }
+
+#box{
+    border: 2px solid #a7a7a7;
+}
+#language{
+    clear: right;
+    float: right;
+    text-align: center;
+    border: 3px solid #CDC298;
+    border-radius: 5px;
+    margin-right: 20px;
+    list-style: none;
+    margin: 15px 20px 5px 5px;
+    }
+	
+.h2-slogan{
+	font-size:14px;
+	font-style:italic;
+}
+.domain{
+  font-size: 16px;
+  float: left;
+  padding: 50px 0px 0px 10px;
+}
+.domain a{
+	color: #fff;
+}
+.domain a:hover{
+	color:#0079D7;
+	text-decoration: none;
+}
+.email{
+	float: right;
+	font-size: 16px;
+	padding: 50px 10px 10px 0px;
+	
+}
+.email a{
+	color: #fff;
+}
+.email a:hover{
+	color:#0079D7;
+	text-decoration: none;
+}
+.catalog{
+ text-align:center;
+}
+.fixed a{
+	float:right;
+}
+.titlefixed h4{
+	float:left;
+	font-size: 20px;
+	margin-left: -25px;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar {
+  margin: 10px 5px 10px 5px;
+} 
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height:410px;
+  margin-bottom: 40px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 410px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 410px;
+}
+
+
+/*MAIN */
+#main {
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 0px;
+}
+#main h6{
+  padding: 5px 0px 2px 15px;
+  color: #880015;
+}
+
+#main h5{
+  padding: 5px 0px 2px 15px;
+  color: #880015;
+  font-weight: bold;
+  font-size: 20px;
+  font-style:italic;
+}
+.main_inner {
+    padding: 0 10px;
+}
+.main_inner h3 {
+    font-size: 17px;
+    margin-top: auto;
+    text-align: center;
+}
+.main_inner > a {
+    color: #880015;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+    width: 100%;
+}
+.main_inner_img {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    height: 300px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.main_inner_img_download{
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2px;
+    width: 25px;
+    
+
+}
+
+#main_value{
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    
+}
+.main_inner_value {
+    padding: 10px 10px;
+}
+
+#main_value h6{
+  padding: 5px 0px 2px 15px;
+  color: #880015;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#main_value h5{
+  padding: 5px 0px 2px 15px;
+  color: #880015;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main_inner_value_img {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main_inner_category{
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+#main-product{
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    width: 100%;
+}
+#main-product h5{
+  padding: 5px 0px 2px 15px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main_inner_product {
+    padding: 0 10px;
+    margin: 5px 0px 5px 20px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    height: 410px;
+}
+.main_inner_product h5{
+  font-size: 17px;
+  font-weight: bold;
+  font-color:#000;
+}
+#main_inner_product h6{
+  margin: 10px 0px 2px 15px;
+  color: #000;
+  font-size: 18px;
+}
+#main_inner_product h3{
+  margin: 10px 0px 2px 15px;
+  color: #000;
+  font-size: 25px;
+}
+
+.btn_product{
+  margin:5px 0px 30px 0px;
+  text-align: center;
+}
+.main_inner_product_img {
+
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main_inner_product_2{
+    padding: 0 10px;
+  margin: 5px 10px 5px 0px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  height: 410px;
+}
+.main_inner_product_img_2{
+display: inline-block;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left:10%;
+}
+.main_inner_product_3 {
+    padding: 0 10px;
+    margin: 5px 10px 5px 20px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    height:auto
+}
+#main_about_ahrc{
+  height: auto;
+  background: #ffffff;
+}
+#text_frame_ahrc{
+  border-radius: 2px;
+  border: 2px solid #c7c7c7;
+  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: auto;
+  text-align: center;
+}
+#mainframe_ahrc{
+    padding: 60px 150px 150px 150px;
+}
+#p_about_ahrc{
+  font-size: 20px;
+  font-weight: bold;
+  font-color: #000000;
+  margin-left:20px;
+  padding-top: 20px;
+}
+#main_inguiries{
+  height: auto;
+  background: #ffffff;
+}
+#p_inquiries{
+  font-size: 20px;
+  font-weight: bold;
+  font-color: #000000;
+  margin-left:20px;
+  padding-top: 20px;
+  height: auto;
+}
+#mainframe_inquiries{
+  margin: 10px 60px 20px 60px;
+}
+#text_frame_inquiries{
+  border: 2px solid #c7c7c7;
+  border-radius: 2px;
+  height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  text-align: center;
+}
+#mainframe_inquiries_2{
+  margin: 10px 60px 20px 60px;
+  height: auto;
+}
+#text_frame_inquiries_2{
+  background: #CDC298;
+  border-radius: 15px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#frame_inquerie{
+  background: #880015;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 0px 5px 0px;
+  margin:0px 20px 0px 20px;
+}
+#frame_inquerie_2{
+  background: #c7c7c7;
+  height: 600px;  
+  margin:10px 20px 0px 20px;
+}
+.form-signin {
+  max-width: 100%;
+  padding: 15px;
+  
+  width: 400px;
+  
+}
+#required{
+  float:left;
+  margin: 7px 0px -20px 3px;
+  font-size: 15px;
+}
+#required-company{
+  float:left;
+  margin: 7px 0px -20px 3px;
+  font-size: 15px;}
+.form-text {
+    max-width: 100%;
+    padding: 15px;
+    margin:20px 20px 20px 30px;
+}
+.form-control-1{
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 3px solid #CDC298;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-1:focus {
+  border-color: #c7c7c7;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control-1::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control-1:-ms-input-placeholder {
+  color: #999;
+}
+.form-control-1::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control-1[disabled],
+.form-control-1[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control-1[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control-1 {
+  height: auto;
+}
+
+.btn{
+  margin-top: 5px;
+}
+#btn-block-size{
+    display: block;
+    width: 30%;
+}
+.btn-postreview{
+  margin-top: 5px;
+  margin-bottom: 30px
+}
+/* FOOTER */
+#footer {
+    background: #880015;
+    border-radius: 5px;
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+#footer li {
+    color: #a7a7a7;
+    margin: 5px 0 0;
+    width: 100%;
+}
+#footer-left{
+    margin-left: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+}
+#footer-right{
+    margin-right: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+    float: right;
+}
+#footer li a{color: #fff;}
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+}
+.short_descript {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+li.page {
+  font-size: 14px;
+  font-weight: bold;
+}
